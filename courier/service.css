@@ -1,0 +1,175 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: gray;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header h1:hover{
+    color: #333;
+
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1.5em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d4e2f0;
+}
+
+section {
+    padding: 3em 1em;
+    text-align: center;
+}
+
+section#services {
+    background-color: #e9ecef;
+    padding: 4em 1em;
+}
+
+section#services h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.service-card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 2em;
+    flex: 1 1 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card i {
+    font-size: 2em;
+    color: gray;
+    margin-bottom: 0.5em;
+}
+
+.service-card h3 {
+    margin: 0 0 0.5em 0;
+    font-size: 1.5em;
+}
+
+.service-card p {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.service-card .btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: #e65c50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.service-card .btn:hover {
+    background-color:  #e67350;
+    transform: translateY(-3px);
+}
+
+footer {
+    background-color:  #333;
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+footer .social {
+    margin-top: 0.5em;
+}
+
+footer .social a {
+    color: white;
+    margin: 0 0.5em;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social a:hover {
+    color: #007bff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        flex: 1 1 100%;
+    }
+}

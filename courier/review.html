@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastCourier - Customer Reviews</title>
+    <link rel="stylesheet" href="review.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><i class="fas fa-shipping-fast"></i> Speedy Courier Express</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="tracking.html">Tracking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section id="reviews">
+        <h2>Customer Reviews</h2>
+        <form id="reviewForm">
+            <label for="reviewName">Name:</label>
+            <input type="text" id="reviewName" name="reviewName" required>
+            <label for="reviewText">Review:</label>
+            <textarea id="reviewText" name="reviewText" required></textarea>
+            <label for="reviewRating">Rating:</label>
+            <select id="reviewRating" name="reviewRating" required>
+                <option value="5">5 - Excellent</option>
+                <option value="4">4 - Very Good</option>
+                <option value="3">3 - Good</option>
+                <option value="2">2 - Fair</option>
+                <option value="1">1 - Poor</option>
+            </select>
+            <button type="submit">Submit Review</button>
+        </form>
+        <div id="reviewResponse"></div>
+        <div id="reviewsList">
+            <h3>All Reviews</h3>
+            <ul id="reviewsDisplay"></ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Speedy Courier Express. All rights reserved.</p>
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="review.js"></script>
+</body>
+</html>

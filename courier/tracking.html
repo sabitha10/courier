@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastCourier - Track Your Package</title>
+    <link rel="stylesheet" href="tracking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><i class="fas fa-shipping-fast"></i> Speedy Courier Express</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="review.html">review</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="tracking">
+        <h2>Track Your Package</h2>
+        <form id="trackingForm">
+            <label for="trackingNumber">Enter Tracking Number:</label>
+            <input type="text" id="trackingNumber" name="trackingNumber" required>
+            <button type="submit">Track</button>
+        </form>
+        <div id="trackingResponse">
+            <!-- Tracking details will be displayed here -->
+        </div>
+    </section>
+<section id="ab">
+    <footer>
+        <p>&copy; 2024 Speedy Courier Express. All rights reserved.</p>
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+</section>
+
+    <script src="tracking.js"></script>
+</body>
+</html>
